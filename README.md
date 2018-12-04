@@ -21,5 +21,7 @@ The dataset we are using is the Amazon Reviews dataset. It spans over a period o
 
 ![](Images/Dataset.png)
 
+The dataset is close to 11 GB and is formatted in JSON. The files are also split by product categories. It has huge volume to leverage for running on cluster platforms. 
+
 
 
