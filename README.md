@@ -128,11 +128,11 @@ ALS in also better than Stochastic gradient descet as it is much easier to paral
 * StringIndexer
 * StopWordRemover
 
+***WHAT DID WE ACCOMPLISH***  
+
 ***RESULTS***
 
 ***CHALLENGES***
-
-***WHAT DID WE ACCOMPLISH***
 
 ***REFERENCES***
 * https://spark.apache.org/docs/preview/
