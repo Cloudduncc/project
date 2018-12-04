@@ -36,7 +36,19 @@ We use DataFrames for our implementation. Although RDDs are simple to use and pr
 
 **DATA PREPROCESSING**
 
-*Needs to be filled*
+* TOKENIZATION OF COLUMN  
+Tokenized columns to get array of strings so that StopWordRemover can work on them.
+* PUNCTUATION REMOVER  
+* DEFING LABELS  
+Any score less than or equal to 3 was termed as a bad review and a score of above 3 was labelled as a good review.
+This was done using:  
+```
+def label_generate(x):
+    if(x>3 or x==3):
+        return 1
+    else:
+        return 0
+```
 
 **ALGORITHMS IMPLEMENTED**
 
