@@ -19,6 +19,7 @@ KARTHICK SELVARAJ (800)*
 
 The dataset we are using is the Amazon Reviews dataset. It spans over a period of 18 years, containing about ~35 million reviews up to March 2013. Reviews include product and user information, ratings and a plaintext review. The dataset was downloaded from Stanford.edu and was compiled by J. McAuley and J. Leskovec.
 
+![](Images/Dataset.png)
 
 
 
