@@ -42,9 +42,9 @@ The formula used to calculate IDF that is included in Spark MLib is:
 
 `IDF(t,D) = log[ (|D| + 1) / (DF(t,D) + 1) ]`  
 where,  
-= IDF(t,D) is the IDF of the term t in the document corpus D
-= |D| is the total number of documents in the corpus D
-= DF(t,D) is the DF of the term t in the document corpus D
+* IDF(t,D) is the IDF of the term t in the document corpus D
+* |D| is the total number of documents in the corpus D
+* DF(t,D) is the DF of the term t in the document corpus D
 
 
 
