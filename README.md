@@ -47,4 +47,4 @@ where,
 * DF(t,D) is the DF of the term t in the document corpus D
 
 
-
+*INSERT SCREENSHOTS FOR LR HERE*
