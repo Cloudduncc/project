@@ -25,6 +25,11 @@ The dataset is close to 11 GB and is formatted in JSON. The files are also split
 
 **TEAM RESPONSIBILITIES**
 
+Needs to be filled
+
+**DATA PREPROCESSING**
+
+Needs to be filled
 
 
 
