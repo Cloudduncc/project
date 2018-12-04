@@ -49,6 +49,18 @@ def label_generate(x):
     else:
         return 0
 ```
+* REMOVING STOP WORDS: Words that occur frequently or regularly should not be considered towards the calculation of the TF-IDF scores.
+These words were removed using:
+```
+StopWordsRemover.loadDefaultStopWords("english")
+
+remover1 = StopWordsRemover(inputCol="reviewText_words", outputCol="reviewText_words_stop_remov")
+df4=remover1.transform(df3)
+
+remover2 = StopWordsRemover(inputCol="summary_words", outputCol="summary_words_stop_remov")
+df5=remover2.transform(df4)
+```
+* Using N-Gram approach where a bunch of 'n' consecutive words are grouped together to find the TFIDF scores.
 
 **ALGORITHMS IMPLEMENTED**
 
