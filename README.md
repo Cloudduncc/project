@@ -31,5 +31,7 @@ The dataset is close to 11 GB and is formatted in JSON. The files are also split
 
 *Needs to be filled*
 
+**ALGORITHMS IMPLEMENTED**
 
+***LOGISTIC REGRESSION***
 
