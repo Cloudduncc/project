@@ -17,6 +17,10 @@ KARTHICK SELVARAJ (801020544)*
 
 *This project aims at classifying online products based on analysis of customers’ sentiments on a large-scale amazon product review dataset. This is achieved by using traditional Information Retrieval techniques and Machine Learning approach. Logistic Regression and Random Forest techniques are used for classification and regression. Alternating Least Square method is made use of for collaborative filtering for recommender systems. The dataset being made use of is the Amazon Reviews dataset.*
 
+**MOTIVATION**
+
+
+
 **DATA SETS**
 
 The dataset we are using is the Amazon Reviews dataset. It spans over a period of 18 years, containing about ~35 million reviews up to March 2013. Reviews include product and user information, ratings and a plaintext review. The dataset was downloaded from Stanford.edu and was compiled by J. McAuley and J. Leskovec.
@@ -113,4 +117,14 @@ ALS in also better than Stochastic gradient descet as it is much easier to paral
 
 *INSERT SCREENSHOTS FOR ALS HERE*
 
+***TOOLS AND SOFTWARE PACKAGES USED***
+* Amazon Simple Storage Service (Amazon S3)
+* Amazon Elastic Map Reduce (Amazon EMR)
+* Amazon Elastic Compute Cloud (Amazon EC2)
+* Spark
+
+***LIBRARIES***
+* Tokenizer
+* StringIndexer
+* StopWordRemover
 
