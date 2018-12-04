@@ -71,3 +71,5 @@ The model is built by associating each user with a user-factor vector and each i
 ALS in also better than Stochastic gradient descet as it is much easier to parallelise and it also converges faster, meaning in less than 10 iterations, it converges to a decent solution.
 
 *INSERT SCREENSHOTS FOR ALS HERE*
+
+
