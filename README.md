@@ -23,6 +23,13 @@ The dataset we are using is the Amazon Reviews dataset. It spans over a period o
 
 The dataset is close to 11 GB and is formatted in JSON. The files are also split by product categories. It has huge volume to leverage for running on cluster platforms. 
 
+**WHY SPARK 2.0?**
+
+With the release of Spark 2.0, there are now three types of data abstractions that Spark provides: RDD, DataFrame and DataSet. Spark started off with RDDs in their version 1.0, DataFrames in v1.3 and Dataset in v1.6. Each implementation has their own advantages and disadvantages.
+We use DataFrames for our implementation. Although RDDs are simple to use and provides familiar OOP style APIs, it comes with some disadvantages. RDDs are expensive when it comes to Garbage Collection. DataFrames is an abstraction and gives a schema view of data for better understanding. It offers better performance improvements over RDDs because of Custom Memory Management and Optimized Execution Plans. Data is stored in off-heap memory in binary format. With this approach, a lot of memory is saved. Also, a Query Plan is created for execution using Spark Catalyst Optimiser.  
+
+*Sentimental analysis* in text mining is the process of categorizing users’ opinions. These opinions are usually in the form of text. There are different ways this can be done, with predicting rating scale on product’s review, predicting polarity on aspects of a product, detecting subjectivity and objectivity in sentences and more. Our approach would utilize predicting the polarity on products, that is, to predict if the reviews or opinions of people about something are positive or negative. Here, we propose to classify these reviews into Good, Average and Bad.
+
 **TEAM RESPONSIBILITIES**
 
 *Needs to be filled*
@@ -54,4 +61,7 @@ where,
 Random forests or Random decision forests are an ensemble learning method for classification, regression or other tasks. It is a supervised learning algorithm. It builds a forest and makes it random. The forest is an ensemble of Decision Trees. These trees are usually trained with “bagging” method. Bagging means that a combination of learning models increases the accuracy of the result. In other words, Random forest builds multiple decision trees and then combines them all together to increase accuracy. An advantage of this approach is that it can be used for both classification and regression problems. Random forest approach adds additional randomness to the model. It does the splitting of nodes based on the best feature instead of the most important feature.  
 Random forest classifier provides two types of randomness: with respect to data and with respect to features, by using the concept of Bagging and Bootstrapping. It works by selecting the best subset of features from the list of total features. It then selects the best feature from the subset of features and then performs splitting. Random Forest is accurate and robust. Tuning of hyperparameters is important in increasing accuracy but this must be implemented manually, so this could get time consuming and complicated.  
 
+*INSERT SCREENSHOTS FOR RF HERE*
+
+***ALTERNATING LEAST SQUARES*
 
