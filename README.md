@@ -5,7 +5,7 @@ Cloud Computing UNCC Project
 
 **PRODUCT CLASSIFICATION BASED ON SENTIMENTAL ANALYSIS ON LARGE SCALE AMAZON PRODUCT REVIEWS**
 
-![](Images/Diagram.png)
+![](Images/Diagram.PNG)
 
 **TEAM MEMBERS**
 
