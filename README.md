@@ -38,7 +38,22 @@ We use DataFrames for our implementation. Although RDDs are simple to use and pr
 
 * TOKENIZATION OF COLUMN  
 Tokenized columns to get array of strings so that StopWordRemover can work on them.
+```
+tokenizer = Tokenizer(inputCol="reviewText", outputCol="reviewText_words")
+
+tokenized = tokenizer.transform(df)
+df2=tokenized.select("asin","helpful","overall","reviewText", "reviewText_words","reviewerID","summary")
+```
+
 * PUNCTUATION REMOVER  
+```
+def lower_clean_str(x):
+  punc='!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+  lowercased_str = x.lower()
+  for ch in punc:
+    lowercased_str = lowercased_str.replace(ch, '')
+```
+
 * DEFING LABELS  
 Any score less than or equal to 3 was termed as a bad review and a score of above 3 was labelled as a good review.
 This was done using:  
