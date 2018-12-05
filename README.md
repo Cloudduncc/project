@@ -103,8 +103,10 @@ where,
 
 | N - Grams | Accuracy | Area under curve (ROC) |
 | --- | --- | --- |
-| b | c | d |
-| f | g | h |
+| 1 | 0.9311 | 0.7130 |
+| 2 | 0.9502 | 0.5709 |
+| 3 | 0.9464 | 0.4237 |
+| 4 | 0.9550 | 0.4518 |
 
 ***RANDOM FOREST***
 
@@ -113,8 +115,12 @@ Random forest classifier provides two types of randomness: with respect to data 
 
 *INSERT SCREENSHOTS FOR RF HERE*
 
-| N - Grams | Accuracy | Area under curve (ROC) |
-| --- | --- | --- |
+| N - Grams | Number of Trees | Accuracy | Area under curve (ROC) |
+| --- | --- | --- | --- |
+| 1 | 15 | 0.9547 | 0.5410 |
+| 1 | 50 | 0.9545 | 0.5981 |
+| 1 | 100 | 0.9500 | 0.7904 |
+| 1 | 200 | 0.9498 | 0.7973 |
 
 ***ALTERNATING LEAST SQUARES***
 
@@ -125,8 +131,11 @@ ALS in also better than Stochastic gradient descet as it is much easier to paral
 
 *INSERT SCREENSHOTS FOR ALS HERE*
 
-| RMSE |
-| --- |
+| Number of Iterations | RMSE |
+| --- | --- |
+| 10 | 1.0987 |
+| 15 | 1.0947 |
+| 20 | 1.0998 |
 
 ***TOOLS AND SOFTWARE PACKAGES USED***
 * Amazon Simple Storage Service (Amazon S3)
