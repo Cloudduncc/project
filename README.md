@@ -168,6 +168,18 @@ ALS in also better than Stochastic gradient descet as it is much easier to paral
 * Configured Spark 2.0 on AWS using tools like EMR and S3 and triggering jobs with tools like CLI
 * Trained the model and saved on S3 and made it available for further use on different models
 
+***EXECUTION STEPS***
+* spark-submit ALS.py reviews_Musical_Instruments_5.json 15 als_result15_1 als_model15_1
+  spark-submit ALS.py <input_file.json> <number_of_iterations> <output_file> <output_model>
+  
+* spark-submit Random.py reviews_Musical_Instruments_5.json 1 rand_result100 rand_model100
+  spark-submit Random.py <input_file.json> <number_of_trees> <output_file> <output_model>
+
+* spark-submit Amazon_Logistic_reg.py reviews_Musical_Instruments_5.json 4 result4 model4
+spark-submit Amazon_Logistic_reg.py <input_file.json> <n_grams> <output_file> <output_model>
+
+* aws emr add-steps --cluster-id j-1L8EP6WYLT88I --steps Type=spark,Name=amazonMusic,Args=[--deploy-mode,cluster,--master,yarn,--conf,spark.yarn.submit.waitAppCompletion=false,--num-executors,2,--executor-cores,2,--executor-memory,10g,s3://cloudcomputing35507/data_files/amazon.py,s3://cloudcomputing35507/amazon_data/reviews_Books_5.json.gz,1,s3://cloudcomputing35507/log_reg_book_res,s3://cloudcomputing35507/log_book_model],ActionOnFailure=CONTINUE
+
 ***RESULTS***
 * For Logistic Regression, we observed that as the N grams increased, we obtained better accuracy for the model
 * For Random Forest and ALS, as we increased the number of trees and the number of iterations, the accuracy improved
