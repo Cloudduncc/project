@@ -146,6 +146,10 @@ ALS in also better than Stochastic gradient descet as it is much easier to paral
 * Amazon Elastic Compute Cloud (Amazon EC2)
 * Spark
 
+![](Images/EC2.JPG)
+![](Images/emr.JPG)
+![](Images/book_run.JPG)
+
 ***LIBRARIES***
 * Tokenizer
 * StringIndexer
