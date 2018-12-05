@@ -169,8 +169,8 @@ ALS in also better than Stochastic gradient descet as it is much easier to paral
 * Trained the model and saved on S3 and made it available for further use on different models
 
 ***EXECUTION STEPS***
-* spark-submit ALS.py reviews_Musical_Instruments_5.json 15 als_result15_1 als_model15_1
-  spark-submit ALS.py <input_file.json> <number_of_iterations> <output_file> <output_model>
+* spark-submit ALS.py reviews_Musical_Instruments_5.json 15 als_result15_1 als_model15_1  
+ spark-submit ALS.py <input_file.json> <number_of_iterations> <output_file> <output_model>
   
 * spark-submit Random.py reviews_Musical_Instruments_5.json 1 rand_result100 rand_model100
   spark-submit Random.py <input_file.json> <number_of_trees> <output_file> <output_model>
