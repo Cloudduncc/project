@@ -101,9 +101,6 @@ where,
 * |D| is the total number of documents in the corpus D
 * DF(t,D) is the DF of the term t in the document corpus D
 
-
-*INSERT SCREENSHOTS FOR LR HERE*
-
 | N - Grams | Accuracy | Area under curve (ROC) |
 | --- | --- | --- |
 | 1 | 0.9311 | 0.7130 |
@@ -116,8 +113,6 @@ where,
 Random forests or Random decision forests are an ensemble learning method for classification, regression or other tasks. It is a supervised learning algorithm. It builds a forest and makes it random. The forest is an ensemble of Decision Trees. These trees are usually trained with “bagging” method. Bagging means that a combination of learning models increases the accuracy of the result. In other words, Random forest builds multiple decision trees and then combines them all together to increase accuracy. An advantage of this approach is that it can be used for both classification and regression problems. Random forest approach adds additional randomness to the model. It does the splitting of nodes based on the best feature instead of the most important feature.  
 Random forest classifier provides two types of randomness: with respect to data and with respect to features, by using the concept of Bagging and Bootstrapping. It works by selecting the best subset of features from the list of total features. It then selects the best feature from the subset of features and then performs splitting. Random Forest is accurate and robust. Tuning of hyperparameters is important in increasing accuracy but this must be implemented manually, so this could get time consuming and complicated.  
 
-*INSERT SCREENSHOTS FOR RF HERE*
-
 | N - Grams | Number of Trees | Accuracy | Area under curve (ROC) |
 | --- | --- | --- | --- |
 | 1 | 15 | 0.9547 | 0.5410 |
@@ -125,14 +120,13 @@ Random forest classifier provides two types of randomness: with respect to data 
 | 1 | 100 | 0.9500 | 0.7904 |
 | 1 | 200 | 0.9498 | 0.7973 |
 
+
 ***ALTERNATING LEAST SQUARES***
 
 *COLLABORATIVE FILTERING* is used to make automatic predictions about the interest of users and their preferences or tastes based on how they engage with a set of items. Collaborative filtering assumes that if two people share the same interests on a particular set of items, then their interests would be similar on a new and completely different topic discussion as well. By doing this, this approach aims at undertstanding users hidden preferences and to recommend them new items that they are more likey to like.  
 Alternating least square is a two-step iterative optimization process.  
 The model is built by associating each user with a user-factor vector and each item with an item-factor vector. Now, to find the latent vectors, we frame this as an optimization problem by using standard squared loss with regularisation. The idea is to continue this till a stopping condition is reached, that is, a maximum number of iterations are reached or the difference between the measure MSE of the current iteration and the previous iteration goes below some epsilon.  
 ALS in also better than Stochastic gradient descet as it is much easier to parallelise and it also converges faster, meaning in less than 10 iterations, it converges to a decent solution.
-
-*INSERT SCREENSHOTS FOR ALS HERE*
 
 | Number of Iterations | RMSE |
 | --- | --- |
