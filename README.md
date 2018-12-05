@@ -103,7 +103,8 @@ where,
 
 | Model | N - Grams | Accuracy | Area under curve (ROC) |
 | --- | --- | --- | --- |
-
+|a | b | c | d |
+| e | f | g | h |
 
 ***RANDOM FOREST***
 
