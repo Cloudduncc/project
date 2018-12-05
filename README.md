@@ -38,7 +38,10 @@ We use DataFrames for our implementation. Although RDDs are simple to use and pr
 
 **TEAM RESPONSIBILITIES**
 
-*Needs to be filled*
+* Preprocessing of Data: Karthick, Akash
+* Information retrieval algorithm: Teja, Akash
+* Machine Learning Algorithm: Karthick, Teja
+* Generating final reports and consolidation: Karthick, Akash, Teja
 
 **DATA PREPROCESSING**
 
