@@ -151,13 +151,24 @@ ALS in also better than Stochastic gradient descet as it is much easier to paral
 * LogisticRegression 
 * RandomForestClassifier
 * ALS
+ 
+***CHALLENGES***
+* Dealing with unbalanced dataset
+* Configuring AWS EMR with S3 was challenging
+* Implementation of ALS was limited to 20 iterations
+* Output files does not always reflect immediately on S3.
 
-***WHAT DID WE ACCOMPLISH***  
+***WHAT DID WE ACCOMPLISH*** 
+* Balancing the dataset
+* N gram implemention with Logistic Regression improved the area under the ROC, which proved to be a good parameter to measure the accuracy of the model
+* Increasing the number of features and number of trees in Random Forest Implementation helped us obtain better results
+* Configured Spark 2.0 on AWS using tools like EMR and S3 and triggering jobs with tools like CLI
+* Trained the model and saved on S3 and made it available for further use on different models
 
 ***RESULTS***
-
-***CHALLENGES***
-
+* For Logistic Regression, we observed that as the N grams increased, we obtained better accuracy for the model
+* For Random Forest and ALS, as we increased the number of trees and the number of iterations, the accuracy improved
+ 
 ***REFERENCES***
 * https://spark.apache.org/docs/preview/
 * Towards Data Science
