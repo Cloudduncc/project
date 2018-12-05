@@ -10,6 +10,13 @@
 PRABHAKAR TEJA SEEDA (801024262)  
 KARTHICK SELVARAJ (801020544)*
 
+**TEAM RESPONSIBILITIES**
+
+* Preprocessing of Data: Karthick, Akash
+* Information retrieval algorithm: Teja, Akash
+* Machine Learning Algorithm: Karthick, Teja
+* Generating final reports and consolidation: Karthick, Akash, Teja
+
 **ABSTRACT**
 
 *This project aims at classifying online products based on analysis of customers’ sentiments on a large-scale amazon product review dataset. This is achieved by using traditional Information Retrieval techniques and Machine Learning approach. Logistic Regression and Random Forest techniques are used for classification and regression. Alternating Least Square method is made use of for collaborative filtering for recommender systems. The dataset being made use of is the Amazon Reviews dataset.*
@@ -32,13 +39,6 @@ With the release of Spark 2.0, there are now three types of data abstractions th
 We use DataFrames for our implementation. Although RDDs are simple to use and provides familiar OOP style APIs, it comes with some disadvantages. RDDs are expensive when it comes to Garbage Collection. DataFrames is an abstraction and gives a schema view of data for better understanding. It offers better performance improvements over RDDs because of Custom Memory Management and Optimized Execution Plans. Data is stored in off-heap memory in binary format. With this approach, a lot of memory is saved. Also, a Query Plan is created for execution using Spark Catalyst Optimiser.  
 
 *Sentimental analysis* in text mining is the process of categorizing users’ opinions. These opinions are usually in the form of text. There are different ways this can be done, with predicting rating scale on product’s review, predicting polarity on aspects of a product, detecting subjectivity and objectivity in sentences and more. Our approach would utilize predicting the polarity on products, that is, to predict if the reviews or opinions of people about something are positive or negative. Here, we propose to classify these reviews into Good, Average and Bad.
-
-**TEAM RESPONSIBILITIES**
-
-* Preprocessing of Data: Karthick, Akash
-* Information retrieval algorithm: Teja, Akash
-* Machine Learning Algorithm: Karthick, Teja
-* Generating final reports and consolidation: Karthick, Akash, Teja
 
 **DATA PREPROCESSING**
 
