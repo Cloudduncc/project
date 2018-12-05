@@ -101,10 +101,10 @@ where,
 
 *INSERT SCREENSHOTS FOR LR HERE*
 
-| Model | N - Grams | Accuracy | Area under curve (ROC) |
-| --- | --- | --- | --- |
-|a | b | c | d |
-| e | f | g | h |
+| N - Grams | Accuracy | Area under curve (ROC) |
+| --- | --- | --- |
+| b | c | d |
+| f | g | h |
 
 ***RANDOM FOREST***
 
@@ -113,8 +113,8 @@ Random forest classifier provides two types of randomness: with respect to data 
 
 *INSERT SCREENSHOTS FOR RF HERE*
 
-| Model | N - Grams | Accuracy | Area under curve (ROC) |
-| --- | --- | --- | --- |
+| N - Grams | Accuracy | Area under curve (ROC) |
+| --- | --- | --- |
 
 ***ALTERNATING LEAST SQUARES***
 
@@ -125,8 +125,8 @@ ALS in also better than Stochastic gradient descet as it is much easier to paral
 
 *INSERT SCREENSHOTS FOR ALS HERE*
 
-| Model | N - Grams | RMSE |
-| --- | --- | --- |
+| RMSE |
+| --- |
 
 ***TOOLS AND SOFTWARE PACKAGES USED***
 * Amazon Simple Storage Service (Amazon S3)
@@ -138,6 +138,10 @@ ALS in also better than Stochastic gradient descet as it is much easier to paral
 * Tokenizer
 * StringIndexer
 * StopWordRemover
+* HashingTF
+* LogisticRegression 
+* RandomForestClassifier
+* ALS
 
 ***WHAT DID WE ACCOMPLISH***  
 
