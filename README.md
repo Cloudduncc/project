@@ -18,15 +18,6 @@ The dataset is close to 11 GB and is formatted in JSON. The files are also split
 
 **DATA PREPROCESSING**
 
-* TOKENIZATION OF COLUMN  
-Tokenized columns to get array of strings so that StopWordRemover can work on them.
-```
-tokenizer = Tokenizer(inputCol="reviewText", outputCol="reviewText_words")
-
-tokenized = tokenizer.transform(df)
-df2=tokenized.select("asin","helpful","overall","reviewText", "reviewText_words","reviewerID","summary")
-```
-
 * PUNCTUATION REMOVER  
 ```
 def lower_clean_str(x):
@@ -46,6 +37,16 @@ def label_generate(x):
     else:
         return 0
 ```
+
+* TOKENIZATION OF COLUMN  
+Tokenized columns to get array of strings so that StopWordRemover can work on them.
+```
+tokenizer = Tokenizer(inputCol="reviewText", outputCol="reviewText_words")
+
+tokenized = tokenizer.transform(df)
+df2=tokenized.select("asin","helpful","overall","reviewText", "reviewText_words","reviewerID","summary")
+```
+
 * REMOVING STOP WORDS: Words that occur frequently or regularly should not be considered towards the calculation of the TF-IDF scores.
 These words were removed using:
 ```
