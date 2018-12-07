@@ -66,8 +66,6 @@ df5=remover2.transform(df4)
 * Machine Learning Algorithm: Karthick, Teja
 * Generating final reports and consolidation: Karthick, Akash, Teja
 
-![](Images/flow_chart.PNG)
-
 
 **ABSTRACT**
 
@@ -138,6 +136,8 @@ ALS in also better than Stochastic gradient descet as it is much easier to paral
 * Amazon Elastic Map Reduce (Amazon EMR)
 * Amazon Elastic Compute Cloud (Amazon EC2)
 * Spark
+
+![](Images/flow_chart.PNG)
 
 ![](Images/EC2.JPG)
 ![](Images/emr.JPG)
