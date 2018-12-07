@@ -8,8 +8,6 @@
 PRABHAKAR TEJA SEEDA (801024262)  
 KARTHICK SELVARAJ (801020544)*
 
-![](Images/flow_chart.PNG)
-
 **DATA SETS**
 
 The dataset we are using is the Amazon Reviews dataset. It spans over a period of 18 years, containing about ~35 million reviews up to March 2013. Reviews include product and user information, ratings and a plaintext review. The dataset was downloaded from Stanford.edu and was compiled by J. McAuley and J. Leskovec.
@@ -67,6 +65,9 @@ df5=remover2.transform(df4)
 * Information retrieval algorithm: Teja, Akash
 * Machine Learning Algorithm: Karthick, Teja
 * Generating final reports and consolidation: Karthick, Akash, Teja
+
+![](Images/flow_chart.PNG)
+
 
 **ABSTRACT**
 
