@@ -49,7 +49,6 @@ df4=remover1.transform(df3)
 remover2 = StopWordsRemover(inputCol="summary_words", outputCol="summary_words_stop_remov")
 df5=remover2.transform(df4)
 ```
-* Using N-Gram approach where a bunch of 'n' consecutive words are grouped together to find the TFIDF scores.
 * TOKENIZATION OF COLUMN  
 Tokenized columns to get array of strings so that StopWordRemover can work on them.
 ```
@@ -58,6 +57,7 @@ tokenizer = Tokenizer(inputCol="reviewText", outputCol="reviewText_words")
 tokenized = tokenizer.transform(df)
 df2=tokenized.select("asin","helpful","overall","reviewText", "reviewText_words","reviewerID","summary")
 ```
+* Using N-Gram approach where a bunch of 'n' consecutive words are grouped together to find the TFIDF scores.
 
 **TEAM RESPONSIBILITIES**
 
