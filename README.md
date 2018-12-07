@@ -50,7 +50,7 @@ remover2 = StopWordsRemover(inputCol="summary_words", outputCol="summary_words_s
 df5=remover2.transform(df4)
 ```
 * TOKENIZATION OF COLUMN  
-Tokenized columns to get array of strings so that StopWordRemover can work on them.
+Tokenized columns to get array of strings.
 ```
 tokenizer = Tokenizer(inputCol="reviewText", outputCol="reviewText_words")
 
