@@ -38,15 +38,6 @@ def label_generate(x):
         return 0
 ```
 
-* TOKENIZATION OF COLUMN  
-Tokenized columns to get array of strings so that StopWordRemover can work on them.
-```
-tokenizer = Tokenizer(inputCol="reviewText", outputCol="reviewText_words")
-
-tokenized = tokenizer.transform(df)
-df2=tokenized.select("asin","helpful","overall","reviewText", "reviewText_words","reviewerID","summary")
-```
-
 * REMOVING STOP WORDS: Words that occur frequently or regularly should not be considered towards the calculation of the TF-IDF scores.
 These words were removed using:
 ```
@@ -59,6 +50,14 @@ remover2 = StopWordsRemover(inputCol="summary_words", outputCol="summary_words_s
 df5=remover2.transform(df4)
 ```
 * Using N-Gram approach where a bunch of 'n' consecutive words are grouped together to find the TFIDF scores.
+* TOKENIZATION OF COLUMN  
+Tokenized columns to get array of strings so that StopWordRemover can work on them.
+```
+tokenizer = Tokenizer(inputCol="reviewText", outputCol="reviewText_words")
+
+tokenized = tokenizer.transform(df)
+df2=tokenized.select("asin","helpful","overall","reviewText", "reviewText_words","reviewerID","summary")
+```
 
 **TEAM RESPONSIBILITIES**
 
