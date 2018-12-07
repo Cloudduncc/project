@@ -146,9 +146,6 @@ ALS in also better than Stochastic gradient descet as it is much easier to paral
 * StringIndexer
 * StopWordRemover
 * HashingTF
-* LogisticRegression 
-* RandomForestClassifier
-* ALS
  
 ***CHALLENGES***
 * Dealing with unbalanced dataset
