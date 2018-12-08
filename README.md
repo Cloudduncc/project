@@ -121,8 +121,16 @@ Random forest classifier provides two types of randomness: with respect to data 
 ***ALTERNATING LEAST SQUARES***
 
 *COLLABORATIVE FILTERING* is used to make automatic predictions about the interest of users and their preferences or tastes based on how they engage with a set of items. Collaborative filtering assumes that if two people share the same interests on a particular set of items, then their interests would be similar on a new and completely different topic discussion as well. By doing this, this approach aims at undertstanding users hidden preferences and to recommend them new items that they are more likey to like.  
+
 Alternating least square is a two-step iterative optimization process.  
-The model is built by associating each user with a user-factor vector and each item with an item-factor vector. Now, to find the latent vectors, we frame this as an optimization problem by using standard squared loss with regularisation. The idea is to continue this till a stopping condition is reached, that is, a maximum number of iterations are reached or the difference between the measure MSE of the current iteration and the previous iteration goes below some epsilon.  
+The model is built by associating each user with a user-factor vector and each item with an item-factor vector.
+
+The model makes use of Matrix factorization as R = UxI where U is the User matrix, I is the Item matrix. The R matrix consists of user rows and product columns with ratings populated in the matrix which are provided by the user.
+The ALS algorithm considers the square of error during matrix factorization as the estimated error could be higher or lower than the actual rating in R where as gradient stochastic descent considers only the error in one direction.
+
+The error therefore becomes e2ij=(Rij−R^ij)2=(Rij−∑UikIkj)2 where k is the number of latent factors 
+The algorithm further adds an regularization term in order to avoid the Overfitting.
+The total error value at each iteration after matrix factorization becomes (Rij−∑UikIkj)2+β∑(||U||2+||I||2). The value of β is always greater than 0. The Matrix factorization generates different values of U and I at each step and the error is calculated until the difference between the measure MSE of the current iteration and the previous iteration goes below some epsilon.
 
 | Number of Iterations | RMSE |
 | --- | --- |
