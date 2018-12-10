@@ -155,6 +155,9 @@ The total error value at each iteration after matrix factorization becomes (Rijâ
 * StringIndexer
 * StopWordRemover
 * HashingTF
+* ML Random Forest
+* ML Logistic Regression
+* ML Alternateing Lease Squares
  
 ***CHALLENGES***
 * Dealing with unbalanced dataset
