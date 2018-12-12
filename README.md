@@ -126,7 +126,7 @@ Alternating least square is a two-step iterative optimization process.
 The model is built by associating each user with a user-factor vector and each item with an item-factor vector.
 
 The model makes use of Matrix factorization as R = UxI where U is the User matrix, I is the Item matrix. The R matrix consists of user rows and product columns with ratings populated in the matrix which are provided by the user.
-The ALS algorithm considers the square of error during matrix factorization as the estimated error could be higher or lower than the actual rating in R where as gradient stochastic descent considers only the error in one direction.
+The ALS algorithm considers the square of error during matrix factorization as the estimated error could be higher or lower than the actual rating in R.
 
 The error therefore becomes e2ij=(Rij−R^ij)2=(Rij−∑UikIkj)2 where k is the number of latent factors 
 The algorithm further adds an regularization term in order to avoid the Overfitting.
