@@ -73,6 +73,8 @@ df2=tokenized.select("asin","helpful","overall","reviewText", "reviewText_words"
 
 **MOTIVATION**  
 The world we live in is become more digitalized each day. E-Commerce is dominating the buying and selling market and people are now able to get products even without having to look at things or feel things. This has made people depend on other buyer's reviews or feedbacks as to gain more information about the quality of the products they are looking to buy. People will have to look at thousands of reviews to understand and get the complete understanding of a project. This can be simplified by building a model that can be used to polarize those reviews and further learn from them. This is what we try to achieve. 
+
+The project provides the capabilities of saving the datasets, models on the cloud and even test the data by using the models saved in the cloud through CLI commands. That is, the entire distributed operations are handled by the cloud by using CLI commands by the user. 
  
 
 **WHY SPARK 2.0?**
